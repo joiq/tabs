@@ -72,3 +72,33 @@ body {
     to { opacity: 1;
     }
 }
+
+/* Timer */
+.timer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer__block {
+    text-align: center;
+    margin-right: 50px;
+}
+
+.timer__block .timer__num {
+    font-size: 30px;
+    display: block;
+    position: relative;
+}
+
+.timer__block .timer__num::after {
+    content: ':';
+    position: absolute;
+    right: -25px;
+    
+}
+
+.timer__block:last-child .timer__num::after {
+    content: none;
+}
